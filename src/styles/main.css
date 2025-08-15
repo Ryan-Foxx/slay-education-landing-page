@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+    /* @ Add Custom Fonts */
+    --font-PoppinsLight: "Poppins Light";
+    --font-PoppinsRegular: "Poppins Regular";
+    --font-PoppinsMedium: "Poppins Medium";
+    --font-PoppinsSemibold: "Poppins Semibold";
+    --font-PoppinsBold: "Poppins Bold";
+    --font-PoppinsExtraBold: "Poppins ExtraBold";
+    --font-MontserratBold: "Montserrat Bold";
+    /* @ Add Custom Color */
+    --color-primary: oklch(0.6419 0.148487 158.6508);
+    --color-secondary: oklch(0.1578 0.0269 203.9);
+    /* @ Add Custom Breakpoint */
+    --breakpoint-*: initial;
+    --breakpoint-sm: 36rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-lg: 62rem;
+    --breakpoint-xl: 75rem;
+    --breakpoint-xxl: 90rem;
+}
+
+@layer base {
+    body {
+        @apply font-PoppinsRegular text-white bg-secondary;
+    }
+
+    input {
+        @apply border-none outline-none
+    }
+
+    @font-face {
+        font-family: "Poppins Light";
+        src: url("/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins Regular";
+        src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins Medium";
+        src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins Semibold";
+        src: local("Poppins Semibold")
+            url("/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins Bold";
+        src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins ExtraBold";
+        src: url("/fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Montserrat Bold";
+        src: url("/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+        font-display: swap;
+    }
+}
+
+@utility container {
+    margin-inline: auto;
+}
