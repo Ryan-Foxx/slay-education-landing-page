@@ -27,7 +27,7 @@
     }
 
     input {
-        @apply border-none outline-none
+        @apply border-none outline-none;
     }
 
     @font-face {
@@ -69,5 +69,5 @@
 }
 
 @utility container {
-    margin-inline: auto;
+    @apply mx-auto px-4;
 }
