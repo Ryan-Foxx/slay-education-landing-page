@@ -10,7 +10,7 @@ export const headerLeftTitle = cva(
 );
 export const headerLefText = cva("mt-8 mb-11 font-PoppinsLight");
 export const headerLeftButtons = cva(
-    "flex flex-col items-center space-y-8 sm:block sm:space-x-8 *:w-50 *:h-15 *:md:w-32 *:md:h-12 *:lg:w-40 *:lg:h-13.25"
+    "flex flex-col items-center space-y-8 sm:block sm:space-x-8 sm:space-y-0 *:w-50 *:h-15 *:md:w-32 *:md:h-12 *:lg:w-40 *:lg:h-13.25"
 );
 export const headerRightWrapper = cva("md:w-1/2 relative");
 export const headerRightImage = cva("w-full");
