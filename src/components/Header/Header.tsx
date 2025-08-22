@@ -33,10 +33,8 @@ function Header() {
                                 learning knows no bounds.
                             </p>
                             <div className={headerLeftButtons()}>
-                                <Button size={"md"}>Get Started</Button>
-                                <Button size={"md"} appearance={"outline"}>
-                                    Contact
-                                </Button>
+                                <Button>Get Started</Button>
+                                <Button appearance={"outline"}>Contact</Button>
                             </div>
                         </div>
                         {/* Header Right Content */}
