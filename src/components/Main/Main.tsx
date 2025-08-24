@@ -1,4 +1,5 @@
 import Services from "@components/Services";
+import About from "@components/About";
 
 function Main() {
     return (
@@ -6,6 +7,8 @@ function Main() {
             <main>
                 {/* Services */}
                 <Services />
+                {/* About */}
+                <About />
             </main>
         </>
     );
