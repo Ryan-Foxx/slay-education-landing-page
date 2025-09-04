@@ -1,5 +1,6 @@
 import Services from "@components/Services";
 import About from "@components/About";
+import Progress from "@/components/Progress";
 
 function Main() {
     return (
@@ -9,6 +10,8 @@ function Main() {
                 <Services />
                 {/* About */}
                 <About />
+                {/* Progress */}
+                <Progress />
             </main>
         </>
     );
